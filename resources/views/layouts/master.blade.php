@@ -19,6 +19,10 @@
     <!-- Styles -->
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
 
+    <!-- Summernote CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -35,7 +39,24 @@
     </div>
 </div>
 
+
+<script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/js/scripts.js') }}"></script>
+
+<!-- Summernote Js Link -->
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+
+<script>
+    $(document).ready(function() {
+        $("#mySummernote").summernote({
+            height: 150,
+        });
+
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+
 </body>
 </html>
