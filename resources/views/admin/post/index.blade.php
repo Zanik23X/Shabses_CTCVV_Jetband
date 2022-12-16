@@ -18,7 +18,7 @@
                     <div class="alert alert-success">{{session('massage')}}</div>
                 @endif
 
-                <table class="table table-bordered">
+                <table id="myDataTable" class="table table-bordered">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -26,6 +26,7 @@
                             <th>Post Name</th>
                             <th>Status</th>
                             <th>Edit</th>
+                            <th>Delete</th>
 
                         </tr>
                     </thead>
@@ -45,9 +46,10 @@
                         </tr>
                         @endforeach
                     </tbody>
+
                 </table>
 
-                your content
+                {{-- your content --}}
             </div>
         </div>
 
