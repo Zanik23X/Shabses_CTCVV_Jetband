@@ -21,6 +21,7 @@
                             </h6>
                         </div>
                     </div>
+
                     @empty
                         <div class="card card-shadow mt-4">
                             <div class="card-body">
@@ -28,6 +29,9 @@
                             </div>
                         </div>
                     @endforelse
+                    <div class="your-paginate mt-4">
+                        {{$post->links()}}
+                    </div>
 
 
 
