@@ -34,6 +34,19 @@
                     <div class="border p-2 my-2">
                         <h4>Advertising Area</h4>
                     </div>
+                    <div class="card mt-3">
+                        <div class="card-header">
+                            <h4>Latest Post</h4>
+                        </div>
+                        <div class="card-body">
+                            @foreach($latest_posts as $latest_posts_item)
+                                <a href="{{ url('tutorial/'.$latest_posts_item->category->slug.'/'.$latest_posts_item->slug) }}" class="text-decoration-none">
+                                    <h6> > {{$latest_posts_item->name}}</h6>
+                                </a>
+                            @endforeach
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
