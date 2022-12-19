@@ -45,6 +45,7 @@
                 <div class="col-md-3">
                     <div class="border p-2">
                         <h4>Advertising Area</h4>
+
                     </div>
                 </div>
             </div>

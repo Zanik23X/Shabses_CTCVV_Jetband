@@ -3,14 +3,17 @@
 <div class="global-navbar">
     <div class="container">
         <div class="row">
+
             <div class="col-md-4">
                 <img src="{{ asset('assets/images/logo.jpg') }}" class="w-100" alt="Logo">
             </div>
+            <div class="border text-center p-4 w-50 ">
+                {{--                        <h5>Advertise Here</h5>--}}
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdhzZOO-p5K9wkvCgVOkltvsd3bh9FVgLT3w&usqp=CAU">
+            </div>
             <div class="col-md-9 my-auto">
             <div class="" >
-                    <div class="border text-center p-2" align="left">
-                        <h5>Advertise Here</h5>
-                    </div>
+
                 </div>
             </div>
         </div>
